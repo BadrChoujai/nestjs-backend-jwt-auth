@@ -13,8 +13,8 @@ async function bootstrap() {
   if (process.env.NODE_ENV === 'development') {
     const config = new DocumentBuilder()
       .addBearerAuth()
-      .setTitle('Sendrum API')
-      .setDescription('The Global API Documentation for sendrum')
+      .setTitle('API Docs')
+      .setDescription('The API Documentation')
       .setVersion('1.0')
       .build();
     const document = SwaggerModule.createDocument(app, config);
